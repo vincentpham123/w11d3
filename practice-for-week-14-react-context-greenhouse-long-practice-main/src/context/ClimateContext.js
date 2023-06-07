@@ -12,7 +12,7 @@ export const ClimateProvider = (props) => {
     const [Humidity,setHumidity] = useState(40)
 
     return (
-        <ClimateContext.Provider value={{Temperature,setTemperature}}>
+        <ClimateContext.Provider value={{Temperature,setTemperature,Humidity,setHumidity}}>
             {props.children}
         </ClimateContext.Provider>
     )

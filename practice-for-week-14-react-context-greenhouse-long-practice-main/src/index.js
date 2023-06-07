@@ -7,13 +7,11 @@ import ThemeProvider from './context/ThemeContext';
 import { ClimateProvider } from './context/ClimateContext';
 function Root() {
   return (
-      <ThemeProvider>
-      <ClimateProvider>
+      <ThemeProvider> <ClimateProvider>
         <BrowserRouter>
           <App />
         </BrowserRouter>
-      </ClimateProvider>
-      </ThemeProvider>
+        </ClimateProvider></ThemeProvider>
   );
 }
 
