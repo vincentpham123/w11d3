@@ -1,29 +1,34 @@
 import './navbar.css';
-import {Switch,Route} from 'react-router-dom'
-const NavBar = () => {
+import {Switch,Route,Redirect,Link} from 'react-router-dom'
 
+
+import App from '../../App';
+const NavBar = () => {
+    // const handleClick=(tabName)=>{
+    //     switch(tabName){
+    //         case('sample'):
+    //             return (e) => navigate('/sample');
+    //             break;
+            
+    //         case('sensory'):
+    //             return (e) => navigate('/sensory');
+    //             break;
+    //         case('report'):
+    //             return (e) => navigate('/report');
+    //             break;
+    //         case('home'):
+    //             return (e) => navigate('/home');
+    //             break;
+    //     }
+    // }
     return (
         <>
-        <Switch>
-            <Route path='/sample'>
-            {/* sample */}
-            </Route>
-            <Route path='/sensory'>
-            {/* sample */}
-            </Route>
-            <Route path='/sensory'>
-            {/* sample */}
-            </Route>
-            <Route path='/sensory'>
-            {/* sample */}
-            </Route>
-        </Switch>
-        <div id='navbar'>
-        <button className='buttons'>Sample Survey</button>
-        <button className='buttons'>Sensory Preferences</button>
-        <button className='buttons'>Report</button>
-        <button className='buttons'>Home</button>
-        </div>
+        <ul id='navbar'>
+        <li className='buttons'><Link to={'/sample'}>Sample Survey</Link></li>
+        <li id='sensory' className='buttons'><Link to={'/sensory'}>Sensory Preferences</Link></li>
+        <li className='buttons'><Link to={'/report'}>Report</Link></li>
+        <li className='buttons'><Link to={'/'}>Home</Link></li>
+        </ul>
         </>
     )
 

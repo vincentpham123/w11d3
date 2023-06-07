@@ -12,7 +12,19 @@ function App() {
     <h2> Home</h2>
     </div>
     </header>
-    <NavBar />
+      <NavBar />
+    <Switch>
+            <Route path='/sample'>
+              <h1>test</h1>
+            </Route>
+            <Route path='/sensory'>
+            <h1>test2</h1>
+            </Route>
+            <Route path='/report'>
+            <h1>test3</h1>
+            </Route>
+            <Route to='/'></Route>
+        </Switch>
     </>
   );
 }
