@@ -1,0 +1,11 @@
+
+header{
+    display:flex;
+}
+
+
+#titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
